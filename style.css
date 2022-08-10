@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+@font-face {
+    font-family: 'Yekan';
+    src: url(./fonts/iranyekanwebregular.woff);
+    font-family: 'Sans';
+    src: url(./fonts/IRANSansXFaNum-Bold.woff);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
+    font-size: 2rem;
+    font-family:Yekan;
+}
+.input{
+  
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    
+}
+
+.input input{
+    font-family:Yekan;
+    border: none;
+    font-size: 1.3rem;
+    height: 60px;
+    width: 400px;
+    background-color: #F7ECDE;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #cbced1;
+    outline: none;
+    padding: 0 10px;
+    position: relative;
+    top: 10px;
+}
+#noghte {
+    font-family:'Sans';
+    width: 400px;
+    position: relative;
+    top: 20px;
+}
+@media(max-width:448px){
+    
+    .input input{
+        width: 90vw;
+        height: 40px;
+        font-size: 1rem;
+    }
+    section{
+        font-size: 1rem;
+    }
+    #noghte {
+        width: 90vw;
+    }
+
+}
